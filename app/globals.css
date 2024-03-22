@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main{ 
+  flex: 1 1 0%;
+}
+
+.active {
+  @apply text-blue-500 underline decoration-blue-500 decoration-4 underline-offset-8;
+}
+
+.active-nav {
+  @apply border-b-blue-500 text-blue-500 brightness-100;
+}
+
+.divided {
+  border-color: black;
+  @apply border-l pl-4;
+}
+
+.rich-body{
+
+  	h1 {
+		@apply text-4xl py-2
+	}
+
+	h2 {
+		@apply text-3xl py-2
+	}
+
+	h3 {
+		@apply text-2xl pb-4 pt-6
+	}
+
+	h4 {
+		@apply text-xl p-1
+	}
+
+	h5 {
+		@apply text-lg p-1
+	}
+
+	h6 {
+		@apply text-base p-1
+	}
+
+	p {
+		@apply text-sm pb-1 
+	}
+
+	a {
+		@apply text-blue-500 font-semibold hover:text-black 
+	}
+
+	li {
+		@apply list-disc ml-6 p-1
+	}
+
+}
